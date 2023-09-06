@@ -14,6 +14,7 @@ class NotesService {
 
   DatabaseUser? _user;
 
+  // Creating singleton pattern
   static final NotesService _shared = NotesService._sharedInstance();
   NotesService._sharedInstance() {
     _notesStreamController = StreamController<List<DatabaseNote>>.broadcast(
