@@ -1,0 +1,62 @@
+{
+    "logout_button": "Wyloguj",
+    "note": "Notatka",
+    "cancel": "Anuluj",
+    "yes": "Tak",
+    "delete": "Usuń",
+    "sharing": "Udostępnianie",
+    "ok": "OK",
+    "login": "Zaloguj",
+    "verify_email": "Zweryfikuj email",
+    "register": "Zarejestruj",
+    "restart": "Uruchom ponownie",
+
+    "start_typing_your_note": "Zacznij pisać swoją notatkę",
+    "delete_note_prompt": "Czy na pewno chcesz usunąć tę notatkę?",
+    "cannot_share_empty_note_prompt": "Nie można udostępnić pustej notatki!",
+    "generic_error_prompt": "Wystąpił błąd",
+    "logout_dialog_prompt": "Czy na pewno chcesz się wylogować?",
+
+    "password_reset": "Resetowanie hasła",
+    "password_reset_dialog_prompt": "Wysłaliśmy Ci link do resetowania hasła. Sprawdź swoją skrzynkę pocztową po więcej informacji.",
+
+    "login_error_cannot_find_user": "Nie można znaleźć użytkownika o podanych danych!",
+    "login_error_wrong_credentials": "Nieprawidłowe dane logowania",
+    "login_error_auth_error": "Błąd uwierzytelniania",
+
+    "login_view_prompt": "Proszę zaloguj się do swojego konta, aby zarządzać notatkami!",
+
+    "login_view_forgot_password": "Zapomniałem hasła",
+    "login_view_not_registered_yet": "Nie jesteś jeszcze zarejestrowany? Zarejestruj się tutaj!",
+
+    "email_text_field_placeholder": "Wprowadź swój adres email",
+    "password_text_field_placeholder": "Wprowadź swoje hasło tutaj",
+
+    "forgot_password": "Zapomniałem hasła",
+    "forgot_password_view_generic_error": "Nie mogliśmy przetworzyć Twojej prośby. Upewnij się, że jesteś zarejestrowanym użytkownikiem, lub jeśli nie, zarejestruj się teraz, wracając o krok wstecz.",
+    "forgot_password_view_prompt": "Jeśli zapomniałeś swojego hasła, po prostu wprowadź swój adres email, a my wyślemy Ci link do resetowania hasła.",
+    "forgot_password_view_send_me_link": "Wyślij mi link do resetowania hasła",
+    "forgot_password_view_back_to_login": "Powrót do strony logowania",
+
+    "register_error_weak_password": "To hasło nie jest wystarczająco bezpieczne. Proszę wybrać inne hasło!",
+    "register_error_email_already_in_use": "Ten adres email jest już zarejestrowany u innego użytkownika. Proszę wybrać inny adres email!",
+    "register_error_generic": "Rejestracja nie powiodła się. Proszę spróbować ponownie później!",
+    "register_error_invalid_email": "Wprowadzony adres email wydaje się być nieprawidłowy. Proszę podać inny adres email!",
+    "register_view_prompt": "Wprowadź swój adres email i hasło, aby zobaczyć swoje notatki!",
+    "register_view_already_registered": "Już zarejestrowany? Zaloguj się tutaj!",
+
+    "verify_email_view_prompt": "Wysłaliśmy Ci wiadomość weryfikacyjną na email. Proszę otwórz ją, aby zweryfikować swoje konto. Jeśli nie otrzymałeś jeszcze wiadomości weryfikacyjnej, kliknij poniższy przycisk!",
+    "verify_email_send_email_verification": "Wyślij wiadomość weryfikacyjną",
+
+    "notes_title": "{count, plural, =0{Brak notatek} one{{count} notatka} few{{count} notatki} other{{count} notatek}}",
+    "@notes_title": {
+        "placeholders": {
+            "count": {
+                "type": "int",
+                "example": "3 notatki"
+            }
+        }
+    },
+
+    "sharing_prompt": "Notatka udostępniona z aplikacji MyNotes:"
+}

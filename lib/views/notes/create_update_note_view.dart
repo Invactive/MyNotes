@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mynotes/extensions/buildcontext/loc.dart';
 import 'package:mynotes/services/auth/auth_service.dart';
 import 'package:mynotes/services/cloud/firebase_cloud_storage.dart';
 import 'package:mynotes/utilities/dialogs/cannot_share_empty_note_dialog.dart';
@@ -90,19 +91,23 @@ class _CreateUpdateNoteViewState extends State<CreateUpdateNoteView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('New Note'), actions: [
-          IconButton(
-            onPressed: () async {
-              final text = _textController.text;
-              if (_note == null || text.isEmpty) {
-                await showCannotShareEmptyNoteDialog(context);
-              } else {
-                Share.share('Note shared from MyNotes: $text');
-              }
-            },
-            icon: const Icon(Icons.share),
-          ),
-        ]),
+        appBar: AppBar(
+            title: Text(
+              context.loc.note,
+            ),
+            actions: [
+              IconButton(
+                onPressed: () async {
+                  final text = _textController.text;
+                  if (_note == null || text.isEmpty) {
+                    await showCannotShareEmptyNoteDialog(context);
+                  } else {
+                    Share.share('${context.loc.sharing_prompt} $text');
+                  }
+                },
+                icon: const Icon(Icons.share),
+              ),
+            ]),
         body: FutureBuilder(
             future: createOrGetExistingNote(context),
             builder: (context, snapshot) {
@@ -112,9 +117,10 @@ class _CreateUpdateNoteViewState extends State<CreateUpdateNoteView> {
                   return TextField(
                     controller: _textController,
                     keyboardType: TextInputType.multiline,
+                    autofocus: true,
                     maxLines: null,
-                    decoration: const InputDecoration(
-                      hintText: 'Input your note here...',
+                    decoration: InputDecoration(
+                      hintText: context.loc.start_typing_your_note,
                     ),
                   );
                 default:
